@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f4f4f9;
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 600px;
+  margin: 20px auto;
+  padding: 10px;
+}
+.card {
+  background-color: #fff;
+  border: 1px solid #f09c9c;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  overflow: hidden; 
+}
+
+.profile-card .profile-header {
+  text-align: center;
+}
+
+.profile-card .profile-image {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 720px) {
+  .profile-card, .contact-card {
+    padding: 15px;
+  }
+
+  .list-inline > li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 540px) {
+  .container {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  h1, h2 {
+    font-size: 1.2em;
+  }
+
+  button {
+    font-size: 0.9em;
+    padding: 8px 15px;
+  }
+
+  img {
+    width: 100px;
+    height: 100px;
+  }
+}
